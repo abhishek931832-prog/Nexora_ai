@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Nexora AI</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+            scroll-behavior:smooth;
+        }
+
+        body{
+            background:#0f172a;
+            color:white;
+        }
+
+        /* Navbar */
+
+        nav{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:20px 70px;
+            background:#111827;
+            position:sticky;
+            top:0;
+            z-index:1000;
+            box-shadow:0 4px 10px rgba(0,0,0,0.4);
+        }
+
+        .logo{
+            font-size:34px;
+            font-weight:bold;
+            color:#38bdf8;
+            letter-spacing:2px;
+        }
+
+        nav ul{
+            display:flex;
+            list-style:none;
+            gap:35px;
+        }
+
+        nav a{
+            text-decoration:none;
+            color:white;
+            font-size:18px;
+            transition:0.3s;
+            font-weight:bold;
+        }
+
+        nav a:hover{
+            color:#38bdf8;
+        }
+
+        /* Hero Section */
+
+        .hero{
+            height:95vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+            flex-direction:column;
+            padding:20px;
+            background:linear-gradient(rgba(15,23,42,0.8),
+            rgba(15,23,42,0.9)),
+            url('https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2070&auto=format&fit=crop');
+            background-size:cover;
+            background-position:center;
+        }
+
+        .hero h1{
+            font-size:75px;
+            margin-bottom:25px;
+            max-width:1000px;
+        }
+
+        .hero span{
+            color:#38bdf8;
+        }
+
+        .hero p{
+            font-size:22px;
+            max-width:750px;
+            line-height:1.7;
+            color:#cbd5e1;
+        }
+
+        .hero button{
+            margin-top:35px;
+            padding:18px 40px;
+            border:none;
+            background:#38bdf8;
+            color:white;
+            font-size:20px;
+            border-radius:12px;
+            cursor:pointer;
+            transition:0.3s;
+            font-weight:bold;
+        }
+
+        .hero button:hover{
+            background:#0284c7;
+            transform:scale(1.08);
+        }
+
+        /* Services */
+
+        .services{
+            padding:100px 70px;
+        }
+
+        .services h2{
+            text-align:center;
+            font-size:55px;
+            margin-bottom:60px;
+        }
+
+        .service-container{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+            gap:35px;
+        }
+
+        .card{
+            background:#1e293b;
+            padding:35px;
+            border-radius:20px;
+            transition:0.4s;
+            box-shadow:0 10px 25px rgba(0,0,0,0.4);
+            border:1px solid #334155;
+        }
+
+        .card:hover{
+            transform:translateY(-12px);
+        }
+
+        .card h3{
+            font-size:30px;
+            margin-bottom:20px;
+            color:#38bdf8;
+        }
+
+        .card p{
+            color:#cbd5e1;
+            line-height:1.8;
+            font-size:17px;
+        }
+
+        /* Pricing */
+
+        .pricing{
+            padding:100px 70px;
+            background:#111827;
+        }
+
+        .pricing h2{
+            text-align:center;
+            font-size:55px;
+            margin-bottom:70px;
+        }
+
+        .pricing-container{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+            gap:35px;
+        }
+
+        .price-card{
+            background:#1e293b;
+            padding:45px 35px;
+            border-radius:20px;
+            text-align:center;
+            position:relative;
+            transition:0.4s;
+            border:1px solid #334155;
+            box-shadow:0 10px 25px rgba(0,0,0,0.4);
+        }
+
+        .price-card:hover{
+            transform:translateY(-12px);
+        }
+
+        .price-card h3{
+            font-size:32px;
+            margin-bottom:15px;
+            color:#38bdf8;
+        }
+
+        .price-card h1{
+            font-size:65px;
+            margin-bottom:15px;
+        }
+
+        .duration{
+            color:#cbd5e1;
+            margin-bottom:30px;
+            font-size:18px;
+        }
+
+        .price-card ul{
+            list-style:none;
+            margin-bottom:35px;
+        }
+
+        .price-card ul li{
+            padding:14px 0;
+            border-bottom:1px solid #334155;
+            color:#e2e8f0;
+            font-size:17px;
+        }
+
+        .price-card button{
+            padding:16px 35px;
+            border:none;
+            background:#38bdf8;
+            color:white;
+            border-radius:12px;
+            font-size:18px;
+            cursor:pointer;
+            transition:0.3s;
+            font-weight:bold;
+        }
+
+        .price-card button:hover{
+            background:#0284c7;
+        }
+
+        .popular{
+            transform:scale(1.05);
+            border:2px solid #38bdf8;
+        }
+
+        .popular:hover{
+            transform:scale(1.08);
+        }
+
+        .tag{
+            position:absolute;
+            top:-15px;
+            left:50%;
+            transform:translateX(-50%);
+            background:#38bdf8;
+            color:white;
+            padding:8px 20px;
+            border-radius:30px;
+            font-size:14px;
+            font-weight:bold;
+        }
+
+        /* Contact */
+
+        .contact{
+            padding:100px 70px;
+            text-align:center;
+        }
+
+        .contact h2{
+            font-size:55px;
+            margin-bottom:25px;
+        }
+
+        .contact p{
+            color:#cbd5e1;
+            margin-bottom:35px;
+            font-size:20px;
+        }
+
+        .contact button{
+            padding:16px 35px;
+            border:none;
+            background:#38bdf8;
+            color:white;
+            font-size:20px;
+            border-radius:12px;
+            cursor:pointer;
+            transition:0.3s;
+            font-weight:bold;
+        }
+
+        .contact button:hover{
+            background:#0284c7;
+            transform:scale(1.05);
+        }
+
+        /* Footer */
+
+        footer{
+            background:#111827;
+            text-align:center;
+            padding:25px;
+            color:#94a3b8;
+            font-size:17px;
+        }
+
+        /* Responsive */
+
+        @media(max-width:768px){
+
+            nav{
+                flex-direction:column;
+                gap:20px;
+                padding:20px;
+            }
+
+            nav ul{
+                gap:20px;
+            }
+
+            .hero h1{
+                font-size:45px;
+            }
+
+            .hero p{
+                font-size:18px;
+            }
+
+            .services,
+            .pricing,
+            .contact{
+                padding:70px 25px;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav>
+
+        <div class="logo">
+            Nexora AI
+        </div>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- Hero Section -->
+
+    <section class="hero">
+
+        <h1>
+            Build Your Future With
+            <span>Nexora AI</span>
+        </h1>
+
+        <p>
+            We create premium websites, AI tools,
+            automation systems, and modern digital
+            experiences for startups and companies worldwide.
+        </p>
+
+        <button onclick="startProject()">
+            Start Project
+        </button>
+
+    </section>
+
+    <!-- Services -->
+
+    <section class="services" id="services">
+
+        <h2>Our Services</h2>
+
+        <div class="service-container">
+
+            <div class="card">
+
+                <h3>🌐 Web Development</h3>
+
+                <p>
+                    Premium responsive websites for
+                    businesses, startups, restaurants,
+                    portfolios, and eCommerce brands.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>🤖 AI Tools</h3>
+
+                <p>
+                    AI chatbots, automation systems,
+                    smart assistants, and advanced
+                    AI integrations for businesses.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>🎨 UI/UX Design</h3>
+
+                <p>
+                    Beautiful user interfaces with
+                    professional user experience
+                    focused on modern trends.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>⚡ Website Redesign</h3>
+
+                <p>
+                    Upgrade outdated websites into
+                    modern, high-speed professional
+                    digital platforms.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Pricing -->
+
+    <section class="pricing" id="pricing">
+
+        <h2>Our Premium Plans</h2>
+
+        <div class="pricing-container">
+
+            <!-- Starter -->
+
+            <div class="price-card">
+
+                <h3>Starter</h3>
+
+                <h1>₹15K</h1>
+
+                <p class="duration">
+                    Basic Business Website
+                </p>
+
+                <ul>
+                    <li>✔ Responsive Design</li>
+                    <li>✔ 5 Pages Website</li>
+                    <li>✔ Contact Form</li>
+                    <li>✔ Basic SEO</li>
+                    <li>✔ Hosting Guide</li>
+                </ul>
+
+                <button>
+                    Choose Plan
+                </button>
+
+            </div>
+
+            <!-- Professional -->
+
+            <div class="price-card popular">
+
+                <div class="tag">
+                    MOST POPULAR
+                </div>
+
+                <h3>Professional</h3>
+
+                <h1>₹45K</h1>
+
+                <p class="duration">
+                    Advanced Business Solution
+                </p>
+
+                <ul>
+                    <li>✔ Modern UI/UX</li>
+                    <li>✔ 10+ Pages Website</li>
+                    <li>✔ Admin Dashboard</li>
+                    <li>✔ SEO Optimization</li>
+                    <li>✔ Speed Optimization</li>
+                    <li>✔ Premium Support</li>
+                </ul>
+
+                <button>
+                    Choose Plan
+                </button>
+
+            </div>
+
+            <!-- Enterprise -->
+
+            <div class="price-card">
+
+                <h3>Enterprise AI</h3>
+
+                <h1>₹1.2L+</h1>
+
+                <p class="duration">
+                    AI Automation & Enterprise Apps
+                </p>
+
+                <ul>
+                    <li>✔ AI Chatbot Integration</li>
+                    <li>✔ Automation Systems</li>
+                    <li>✔ Custom Web Application</li>
+                    <li>✔ Database Integration</li>
+                    <li>✔ Security Features</li>
+                    <li>✔ 24/7 Support</li>
+                </ul>
+
+                <button>
+                    Choose Plan
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Contact -->
+
+    <section class="contact" id="contact">
+
+        <h2>
+            Contact Nexora AI
+        </h2>
+
+        <p>
+            Ready to grow your business with
+            modern technology and AI solutions?
+        </p>
+
+        <button onclick="contactUs()">
+            Contact Us
+        </button>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+        © 2026 Nexora AI | All Rights Reserved
+    </footer>
+
+    <!-- JavaScript -->
+
+    <script>
+
+        function startProject(){
+
+            alert("🚀 Welcome To Nexora AI");
+        }
+
+        function contactUs(){
+
+            alert("📩 Contact: nexoraai@gmail.com");
+        }
+
+    </script>
+
+</body>
+
+</html>
