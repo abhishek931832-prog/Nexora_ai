@@ -1,0 +1,3226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Dubai  Tour Packages</title>
+  <!-- Google Fonts & Font Awesome -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+ <style>
+
+
+
+
+    :root {
+      --navy: #df230e;
+      --navy-deep: #d13f17;
+      --navy-card: #451c0f;
+      --navy-card-2: #ca2f21;
+      --teal: #08c4d2;
+      --teal-light: #23e2ec;
+      --gold: #c9a05c;
+      --gold-light: #e8c887;
+      --olive: #6b8a5a;
+      --cream: #c34011;
+      --ink: #e8ecf3;
+      --ink-soft: #aab6c9;
+      --border-soft: rgba(205, 65, 30, 0.16);
+    }
+
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+
+    body {
+      font-family: "DM Sans", sans-serif !important;
+      background: var(--cream);
+      background-image:
+        radial-gradient(circle at 15% 0%, rgba(28,124,130,0.18), transparent 40%),
+        radial-gradient(circle at 85% 20%, rgba(201,160,92,0.12), transparent 45%);
+      /* scroll-behavior: smooth; */
+      color: var(--ink);
+      letter-spacing: 0.1px;
+    }
+
+    body, body * {
+      font-family: "DM Sans", sans-serif !important;
+    }
+
+    .section-title h2, .title, .footer-brand h3, .footer-col h4, .uxx-banner-left h1, .why-card h3 {
+      font-family: 'Playfair Display', serif !important;
+    }
+
+    .fa, .fas, .far, .fab, .fa-solid, .fa-regular, .fa-brands {
+      font-family: "Font Awesome 6 Free" !important;
+      font-weight: 900;
+    }
+
+    .fa-brands {
+      font-family: "Font Awesome 6 Brands" !important;
+    }
+ 
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+ 
+    .section-title {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .section-title h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 38px;
+      font-weight: 700;
+      color: var(--gold-light);
+      position: relative;
+      display: inline-block;
+    }
+    .section-title h2:after {
+      content: '';
+      position: absolute;
+      bottom: -12px;
+      left: 50%;++
+      transform: translateX(-50%);
+      width: 70px;
+      height: 4px;
+      background: linear-gradient(90deg, var(--teal), var(--gold));
+      border-radius: 4px;
+    }
+    .section-title p {
+      margin-top: 20px;
+      color: var(--ink-soft);
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      font-weight: 300;
+    }
+ 
+    .packages-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 32px;
+      margin: 40px 0 20px;
+    }
+ 
+    .package-card {
+      width: 360px;
+      background: linear-gradient(160deg, var(--navy-card), var(--navy-card-2));
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+      transition: transform 0.2s ease, box-shadow 0.2s;
+      border: 1px solid var(--border-soft);
+    }
+    .package-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 34px rgba(0,0,0,0.5), 0 0 0 1px rgba(201,160,92,0.25);
+    }
+    .offer-strip {
+      background: linear-gradient(90deg, var(--navy), var(--teal), var(--gold));
+      color: #fff;
+      text-align: center;
+      padding: 7px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+    }
+    .package-img {
+      height: 220px;
+      position: relative;
+    }
+    .package-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .discount {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: linear-gradient(90deg, var(--gold), var(--gold-light));
+      color: var(--navy-deep);
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 700;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.35);
+    }
+    .package-content {
+      padding: 18px;
+    }
+    .rating-duration {
+      display: flex;
+      justify-content: space-between;
+      font-size: 13px;
+      color: var(--ink-soft);
+    }
+    .stars { color: var(--gold-light); letter-spacing: 1px;}
+    .title {
+      font-family: 'Playfair Display', serif;
+      font-size: 21px;
+      font-weight: 700;
+      margin: 10px 0;
+      color: var(--gold-light);
+    }
+    .price {
+      margin: 10px 0;
+      color: var(--ink);
+    }
+    .price span {
+      color: var(--teal-light);
+      font-weight: 700;
+    }
+    .per-person {
+      font-size: 12px;
+      color: var(--ink-soft);
+      font-weight: normal;
+      margin-left: 5px;
+    }
+    .old {
+      color: #6c7994;
+      text-decoration: line-through;
+      margin-left: 5px;
+      font-weight: 400;
+    }
+    .features {
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      margin: 12px 0;
+      font-size: 12px;
+      border-top: 1px dashed var(--border-soft);
+      border-bottom: 1px dashed var(--border-soft);
+      padding: 10px 0;
+    }
+    .features div {
+      flex: 1;
+      color: var(--ink-soft);
+    }
+    .features i {
+      display: block;
+      color: var(--teal-light);
+      margin-bottom: 4px;
+      font-size: 16px;
+    }
+    .inclusion-short p, .inclusion-full p {
+      margin: 5px 0;
+      font-size: 14px;
+      color: var(--ink-soft);
+    }
+    .inclusion-full {
+      display: none;
+    }
+    .read-more {
+      color: var(--teal-light);
+      font-weight: 600;
+      font-size: 14px;
+      cursor: pointer;
+      text-align: right;
+      margin-top: 5px;
+      transition: all 0.2s ease;
+    }
+    .read-more:hover {
+      color: var(--gold-light);
+      text-decoration: underline;
+    }
+    .btn-row {
+      display: flex;
+      margin-top: 15px;
+      gap: 6px;
+    }
+    .btn {
+      flex: 1;
+      padding: 11px 0;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      font-size: 14px;
+      border-radius: 8px;
+      font-weight: 500;
+      transition: 0.2s;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+    .whatsapp { background: #25D366; }
+    .call { background: var(--teal); }
+    .enquiry { background: linear-gradient(90deg, var(--gold), var(--gold-light)); color: var(--navy-deep); font-weight: 600; }
+    
+    .btn:hover {
+      opacity: 0.85;
+      transform: scale(0.98);
+    }
+ 
+    .testimonials-section {
+      background: var(--navy-deep);
+      padding: 70px 0;
+      margin-top: 30px;
+      border-top: 1px solid var(--border-soft);
+      border-bottom: 1px solid var(--border-soft);
+    }
+    .testimonial-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+    .testimonial-card {
+      background: linear-gradient(160deg, var(--navy-card), var(--navy-card-2));
+      border-radius: 28px;
+      padding: 28px 24px;
+      width: 320px;
+      box-shadow: 0 8px 20px rgba(218, 22, 22, 0.3);
+      transition: all 0.2s;
+      border: 1px solid var(--border-soft);
+    }
+    .testimonial-card i.fa-quote-left {
+      color: var(--gold-light);
+      font-size: 28px;
+      opacity: 0.6;
+      margin-bottom: 12px;
+      display: inline-block;
+    }
+    .testimonial-text {
+      font-size: 15px;
+      line-height: 1.5;
+      color: var(--ink-soft);
+      margin: 16px 0;
+      font-style: italic;
+    }
+    .client-info {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-top: 12px;
+    }
+    .client-info img {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .client-name {
+      font-weight: 700;
+      color: var(--ink);
+    }
+    .client-loc {
+      font-size: 12px;
+      color: var(--teal-light);
+    }
+    .rating-small {
+      color: var(--gold-light);
+      font-size: 12px;
+      margin-top: 5px;
+    }
+    /* ===== WHY CHOOSE US SECTION ===== */
+    .why-choose-section {
+        padding: 70px 0 80px;
+        background: var(--navy-deep);
+        border-top: 1px solid var(--border-soft);
+        border-bottom: 1px solid var(--border-soft);
+        margin-top: 20px;
+    }
+
+    .why-choose-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 20px;
+    }
+
+    .why-card {
+        background: linear-gradient(160deg, var(--navy-card), var(--navy-card-2));
+        border-radius: 18px;
+        padding: 32px 28px 28px;
+        width: 240px;
+        text-align: center;
+        border: 1px solid var(--border-soft);
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+    }
+
+    .why-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 14px 30px rgba(0,0,0,0.45), 0 0 0 1px rgba(201,160,92,0.2);
+    }
+
+    .why-icon {
+        width: 70px;
+        height: 70px;
+        margin: 0 auto 16px;
+        background: linear-gradient(135deg, rgba(28,124,130,0.25), rgba(201,160,92,0.20));
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        color: var(--gold-light);
+        border: 1px solid rgba(201,160,92,0.20);
+        transition: 0.3s;
+    }
+
+    .why-card:hover .why-icon {
+        background: linear-gradient(135deg, var(--teal), var(--gold));
+        color: var(--navy-deep);
+        border-color: transparent;
+        transform: scale(1.05);
+    }
+
+    .why-card h3 {
+        font-family: 'Playfair Display', serif;
+        font-size: 19px;
+        font-weight: 700;
+        color: var(--gold-light);
+        margin-bottom: 10px;
+        letter-spacing: 0.3px;
+    }
+
+    .why-card p {
+        font-size: 14px;
+        line-height: 1.6;
+        color: var(--ink-soft);
+        margin-bottom: 0;
+        font-weight: 300;
+    }
+
+    .main-footer {
+      background: var(--navy-deep);
+      color: #ddd;
+      padding: 56px 0 30px;
+    }
+    .footer-container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 40px;
+    }
+    .footer-brand h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      background: linear-gradient(90deg, var(--gold-light), var(--gold));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      margin-bottom: 12px;
+    }
+    .footer-brand p {
+      max-width: 260px;
+      font-size: 14px;
+      opacity: 0.8;
+    }
+    .footer-links {
+      display: flex;
+      gap: 60px;
+      flex-wrap: wrap;
+    }
+    .footer-col h4 {
+      color: var(--gold-light);
+      margin-bottom: 18px;
+      font-size: 18px;
+      font-family: 'Playfair Display', serif;
+    }
+    .footer-col ul {
+      list-style: none;
+    }
+    .footer-col li {
+      margin-bottom: 10px;
+    }
+    .footer-col a {
+      color: #ccc;
+      text-decoration: none;
+      font-size: 14px;
+      transition: 0.2s;
+    }
+    .footer-col a:hover {
+      color: var(--gold-light);
+    }
+    .social-icons i {
+      font-size: 22px;
+      margin-right: 16px;
+      color: var(--gold-light);
+      transition: 0.2s;
+    }
+    .social-icons i:hover {
+      color: #fff;
+    }
+    .footer-bottom {
+      text-align: center;
+      padding-top: 40px;
+      font-size: 13px;
+      border-top: 1px solid #d10f08;
+      margin-top: 30px;
+      max-width: 1280px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 10px;
+    }
+    .gst-number {
+      font-size: 12px;
+      margin-top: 8px;
+      color: #aaa;
+    }
+    @media (max-width: 880px) {
+      .section-title h2 {
+        font-size: 28px;
+      }
+    }
+    @media (max-width: 480px) {
+      .package-card {
+        width: 100%;
+        max-width: 360px;
+      }
+      .btn-row {
+        flex-wrap: wrap;
+      }
+      .btn {
+        min-width: 90px;
+      }
+    }
+
+    @media (max-width: 768px) {
+        .why-card {
+            width: 100%;
+            max-width: 300px;
+            padding: 26px 20px;
+        }
+        .why-choose-section {
+            padding: 50px 0 60px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .why-card {
+            max-width: 100%;
+        }
+        .why-icon {
+            width: 60px;
+            height: 60px;
+            font-size: 26px;
+        }
+        .why-card h3 {
+            font-size: 17px;
+        }
+    }
+
+  </style>
+
+
+
+<style>
+
+  body{
+    margin:0;
+    font-family:'DM Sans',sans-serif;
+
+    background-image:url("images/dubai-bg.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+
+
+.hero{
+
+    background-image:url("images/dubai-banner.jpg");
+    background-size:cover;
+    background-position:center;
+
+    height:600px;
+
+}
+</style>
+
+
+
+<section class="hero">
+
+</section>
+
+
+<style>
+
+  .hero{
+
+background:
+linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+url("images/dubai-banner.jpg");
+
+background-size:cover;
+background-position:center;
+
+height:650px;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+color:white;
+
+}
+
+body{
+background-image:url("https://images.unsplash.com/photo-1512453979798-5ea266f8880c");
+background-size:cover;
+background-position:center;
+}
+</style>
+
+
+<!-- header -->
+
+
+
+<!-- Font Awesome -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<header class="main-header">
+
+    <!-- Top Offer Strip -->
+    <div class="top-strip">
+        <marquee scrollamount="5">
+            🔥 Limited Time Offer | Flat 20% OFF on Dubai  Tour Packages | Book Today & Save More ✈️🌴
+        </marquee>
+    </div>
+
+    <!-- Navbar -->
+    <div class="navbar">
+
+        <!-- Logo -->
+        <div class="logo-box">
+
+            <a href="travels.html" class="logo">
+
+              <img src="https://cdn-icons-png.flaticon.com/512/3125/3125713.png" alt="Travel Logo">
+
+
+                <div class="logo-text">
+                    <h2>Triman Travels</h2>
+                    <span>Explore • Dream • Discover</span>
+                </div>
+
+            </a>
+
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="nav-links" id="navMenu">
+
+            <a href="travels.html">
+                <i class="fa fa-house"></i> Home
+            </a>
+
+            <a href="#packagesGrid">
+                <i class="fa fa-earth-asia"></i> Packages
+            </a>
+
+            <a href="#about">
+                <i class="fa fa-users"></i> About
+            </a>
+
+            <a href="#contact">
+                <i class="fa fa-envelope"></i> Contact
+            </a>
+
+            <!-- Mobile Buttons -->
+            <div class="mobile-btns">
+
+                <a href="tel:+917611175557" class="btn call-btn">
+                    <i class="fa fa-phone"></i> Contact
+                </a>
+
+                <a href="#"
+                onclick="openPopupWithoutPackage(); return false;"
+                class="btn enquiry-btn">
+
+                    <i class="fa fa-paper-plane"></i>
+                    Enquiry
+
+                </a>
+
+            </div>
+
+        </nav>
+
+        <!-- Desktop Buttons -->
+        <div class="header-btns">
+
+            <a href="tel:+917611175557" class="btn call-btn">
+                <i class="fa fa-phone"></i> Contact 
+            </a>
+
+            <a href="#"
+            onclick="openPopupWithoutPackage(); return false;"
+            class="btn enquiry-btn">
+
+                <i class="fa fa-paper-plane"></i>
+                Enquiry
+
+            </a>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+
+
+
+<style>
+  html{
+    scroll-behavior:smooth;
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+         
+
+
+
+
+
+<script>
+
+  const aboutCards = document.querySelectorAll(".about-card");
+
+window.addEventListener("scroll", function(){
+
+    aboutCards.forEach((card)=>{
+
+        const top = card.getBoundingClientRect().top;
+
+        if(top < window.innerHeight - 100){
+            card.classList.add("show");
+        }
+
+    });
+
+});
+
+
+  
+</script>
+
+
+
+
+
+
+
+
+
+
+  <style>
+
+
+
+/* ===========================
+GOOGLE FONT
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+padding-top:95px;
+}
+
+/* ===========================
+TOP STRIP
+=========================== */
+
+.top-strip{
+
+background:linear-gradient(90deg,#ff9800,#ff5722);
+
+color:#fff;
+
+padding:10px;
+
+font-size:15px;
+
+font-weight:600;
+
+}
+
+/* ===========================
+HEADER
+=========================== */
+
+.main-header{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+z-index:999;
+
+box-shadow:0 8px 30px rgba(0,0,0,.15);
+
+}
+
+/* ===========================
+NAVBAR
+=========================== */
+
+.navbar{
+
+height:82px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+padding:0 60px;
+
+background:rgba(255,255,255,.95);
+
+backdrop-filter:blur(15px);
+
+}
+
+/* ===========================
+LOGO
+=========================== */
+
+.logo{
+
+display:flex;
+
+align-items:center;
+
+text-decoration:none;
+
+}
+
+.logo img{
+
+width:65px;
+
+height:65px;
+
+border-radius:50%;
+
+object-fit:cover;
+
+margin-right:15px;
+
+animation:rotateLogo 8s linear infinite;
+
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+
+}
+
+@keyframes rotateLogo{
+
+0%{
+transform:rotate(0deg);
+}
+
+100%{
+transform:rotate(360deg);
+}
+
+}
+
+.logo-text h2{
+
+font-size:28px;
+
+font-weight:700;
+
+color:#009688;
+
+}
+
+.logo-text span{
+
+font-size:13px;
+
+color:#777;
+
+}
+
+/* ===========================
+MENU
+=========================== */
+
+.nav-links{
+
+display:flex;
+
+gap:30px;
+
+align-items:center;
+
+}
+
+.nav-links a{
+
+text-decoration:none;
+
+font-weight:600;
+
+color:#333;
+
+transition:.3s;
+
+position:relative;
+
+}
+
+.nav-links a i{
+
+margin-right:6px;
+
+color:#009688;
+
+}
+
+.nav-links a:hover{
+
+color:#009688;
+
+}
+
+.nav-links a::after{
+
+content:'';
+
+position:absolute;
+
+left:0;
+
+bottom:-8px;
+
+width:0;
+
+height:3px;
+
+background:#009688;
+
+transition:.3s;
+
+}
+
+.nav-links a:hover::after{
+
+width:100%;
+
+}
+
+/* ===========================
+BUTTONS
+=========================== */
+
+.header-btns{
+
+display:flex;
+
+gap:15px;
+
+}
+
+.btn{
+
+padding:12px 28px;
+
+border-radius:40px;
+
+text-decoration:none;
+
+font-weight:600;
+
+transition:.35s;
+
+display:inline-flex;
+
+align-items:center;
+
+gap:8px;
+
+}
+
+.call-btn{
+
+background:#009688;
+
+color:white;
+
+}
+
+.call-btn:hover{
+
+transform:translateY(-4px);
+
+box-shadow:0 12px 25px rgba(0,150,136,.35);
+
+}
+
+.enquiry-btn{
+
+background:linear-gradient(45deg,#ff9800,#ff5722);
+
+color:white;
+
+}
+
+.enquiry-btn:hover{
+
+transform:translateY(-4px);
+
+box-shadow:0 12px 25px rgba(255,87,34,.35);
+
+}
+
+/* ===========================
+MENU TOGGLE
+=========================== */
+
+.menu-toggle{
+
+display:none;
+
+font-size:30px;
+
+cursor:pointer;
+
+}
+
+/* ===========================
+MOBILE
+=========================== */
+
+.mobile-btns{
+
+display:none;
+
+}
+
+@media(max-width:992px){
+
+.navbar{
+
+padding:15px 25px;
+
+}
+
+.menu-toggle{
+
+display:block;
+
+}
+
+.nav-links{
+
+position:absolute;
+
+top:82px;
+
+left:-100%;
+
+background:white;
+
+width:100%;
+
+flex-direction:column;
+
+padding:30px;
+
+transition:.4s;
+
+box-shadow:0 5px 20px rgba(0,0,0,.2);
+
+}
+
+.nav-links.active{
+
+left:0;
+
+}
+
+.header-btns{
+
+display:none;
+
+}
+
+.mobile-btns{
+
+display:flex;
+
+flex-direction:column;
+
+gap:15px;
+
+width:100%;
+
+margin-top:20px;
+
+}
+
+.logo-text h2{
+
+font-size:22px;
+
+}
+
+.logo img{
+
+width:55px;
+
+height:55px;
+
+}
+
+}
+  </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+
+
+
+// =========================
+// MOBILE MENU
+// =========================
+
+const menuBtn = document.getElementById("menuBtn");
+const navMenu = document.getElementById("navMenu");
+
+function toggleMenu() {
+    navMenu.classList.toggle("active");
+    document.body.classList.toggle("menu-open");
+}
+
+// Close menu when clicking outside
+document.addEventListener("click", function (e) {
+
+    if (
+        navMenu.classList.contains("active") &&
+        !navMenu.contains(e.target) &&
+        !menuBtn.contains(e.target)
+    ) {
+        navMenu.classList.remove("active");
+        document.body.classList.remove("menu-open");
+    }
+
+});
+
+// Close menu after clicking a link
+document.querySelectorAll("#navMenu a").forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        navMenu.classList.remove("active");
+        document.body.classList.remove("menu-open");
+
+    });
+
+});
+
+
+// =========================
+// STICKY HEADER
+// =========================
+
+const header = document.querySelector(".header");
+
+window.addEventListener("scroll", () => {
+
+    if (window.scrollY > 80) {
+
+        header.classList.add("sticky");
+
+    } else {
+
+        header.classList.remove("sticky");
+
+    }
+
+});
+
+
+// =========================
+// SMOOTH SCROLL
+// =========================
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+
+    anchor.addEventListener("click", function (e) {
+
+        e.preventDefault();
+
+        const target = document.querySelector(this.getAttribute("href"));
+
+        if (target) {
+
+            target.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+
+        }
+
+    });
+
+});
+
+
+// =========================
+// ACTIVE MENU
+// =========================
+
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll("#navMenu a");
+
+window.addEventListener("scroll", () => {
+
+    let current = "";
+
+    sections.forEach(section => {
+
+        const sectionTop = section.offsetTop - 120;
+
+        if (pageYOffset >= sectionTop) {
+            current = section.getAttribute("id");
+        }
+
+    });
+
+    navLinks.forEach(link => {
+
+        link.classList.remove("active");
+
+        if (link.getAttribute("href") === "#" + current) {
+
+            link.classList.add("active");
+
+        }
+
+    });
+
+});
+
+
+// =========================
+// BACK TO TOP BUTTON
+// =========================
+
+const topBtn = document.getElementById("backToTop");
+
+window.addEventListener("scroll", () => {
+
+    if (window.scrollY > 300) {
+
+        topBtn.classList.add("show");
+
+    } else {
+
+        topBtn.classList.remove("show");
+
+    }
+
+});
+
+topBtn.addEventListener("click", () => {
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+
+});
+
+
+// =========================
+// BUTTON RIPPLE EFFECT
+// =========================
+
+document.querySelectorAll("button").forEach(button => {
+
+    button.addEventListener("click", function (e) {
+
+        const circle = document.createElement("span");
+
+        circle.classList.add("ripple");
+
+        const rect = this.getBoundingClientRect();
+
+        circle.style.left = (e.clientX - rect.left) + "px";
+        circle.style.top = (e.clientY - rect.top) + "px";
+
+        this.appendChild(circle);
+
+        setTimeout(() => {
+            circle.remove();
+        }, 600);
+
+    });
+
+});
+</script>
+
+
+
+<section id="homePage">
+    <!-- Your Home Content -->
+</section>
+
+<section id="aboutPage" style="display:none;">
+    <h1>About Our Packages</h1>
+
+    <!-- Put your 6 package cards here -->
+
+    <button onclick="showHome()">← Back to Home</button>
+</section>
+
+<script>
+
+
+
+
+function showAbout() {
+    document.getElementById("homePage").style.display = "none";
+    document.getElementById("aboutPage").style.display = "block";
+    window.scrollTo(0, 0);
+}
+
+function showHome() {
+    document.getElementById("aboutPage").style.display = "none";
+    document.getElementById("homePage").style.display = "block";
+    window.scrollTo(0, 0);
+}
+
+
+  
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+
+
+
+  .header.sticky{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:#fff;
+    box-shadow:0 5px 20px rgba(0,0,0,.12);
+    z-index:999;
+}
+
+#backToTop{
+    position:fixed;
+    right:25px;
+    bottom:25px;
+    width:50px;
+    height:50px;
+    border:none;
+    border-radius:50%;
+    background:#ff6b00;
+    color:#fff;
+    cursor:pointer;
+    opacity:0;
+    visibility:hidden;
+    transition:.3s;
+}
+
+#backToTop.show{
+    opacity:1;
+    visibility:visible;
+}
+
+#navMenu a.active{
+    color:#ff6b00;
+    font-weight:700;
+}
+
+button{
+    position:relative;
+    overflow:hidden;
+}
+
+.ripple{
+    position:absolute;
+    width:20px;
+    height:20px;
+    background:rgba(255,255,255,.6);
+    border-radius:50%;
+    transform:translate(-50%,-50%);
+    animation:ripple .6s linear;
+}
+
+@keyframes ripple{
+    from{
+        width:0;
+        height:0;
+        opacity:1;
+    }
+    to{
+        width:300px;
+        height:300px;
+        opacity:0;
+    }
+}
+</style>
+<section class="uxx-banner-main">
+    <div class="uxx-banner-left">
+    </div>
+    <div class="uxx-form-container">
+        <div class="uxx-form-header">
+            <span class="uxx-shake-thumb">👍</span> Plan Your Trip Now
+        </div>
+        <form action="email.php" method="POST">
+    <div class="uxx-input-box">
+        <input type="text" name="name" placeholder="Full Name*" required>
+        <i class="fa fa-user"></i>
+    </div>
+    <div class="uxx-input-box">
+        <input type="text" name="phone" placeholder="Your Phone*" required>
+        <i class="fa fa-phone"></i>
+    </div>
+    <div class="uxx-input-box">
+        <input type="email" name="email" placeholder="Your Email*" required>
+        <i class="fa fa-envelope"></i>
+    </div>
+    <div class="uxx-input-box">
+        <textarea name="message" placeholder="Please send your tour details*" rows="3" required></textarea>
+        <i class="fa fa-comment"></i>
+    </div>
+    <input type="hidden" name="package" id="selectedPackageInput" value="">
+    <button type="submit" name="submit" class="uxx-submit-btn">SEND YOUR ENQUIRY</button>
+</form>
+    </div>
+</section>
+
+
+
+<div id="enquiryPopup" class="popup">
+
+    <div class="popup-content">
+
+        <span class="close" onclick="closeOptions()">&times;</span>
+
+        <h2>Select an Option</h2>
+
+        <button onclick="window.location.href='tel:+917611175557'">
+            📞 Call Now
+        </button>
+
+        <button onclick="window.open('https://wa.me/917611175557','_blank')">
+            💬 WhatsApp
+        </button>
+
+        <button onclick="showForm()">
+            📝 Fill Enquiry Form
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<script>
+
+
+
+// Open Enquiry Popup
+function openEnquiry() {
+    document.getElementById("enquiryPopup").classList.add("show");
+    document.body.style.overflow = "hidden";
+}
+
+// Close Enquiry Popup
+function closeEnquiry() {
+    document.getElementById("enquiryPopup").classList.remove("show");
+    document.body.style.overflow = "auto";
+}
+
+// Close when clicking outside popup
+window.addEventListener("click", function(e) {
+    const popup = document.getElementById("enquiryPopup");
+
+    if (e.target === popup) {
+        closeEnquiry();
+    }
+});
+
+// ESC key closes popup
+document.addEventListener("keydown", function(e) {
+    if (e.key === "Escape") {
+        closeEnquiry();
+    }
+});
+
+// Option Selection
+function enquiryOption(type) {
+
+    switch(type){
+
+        case "call":
+            window.location.href = "tel:+917611175557";
+            break;
+
+        case "whatsapp":
+            window.open(
+                "https://wa.me/917611175557?text=Hi, I want more details about your tour packages.",
+                "_blank"
+            );
+            break;
+
+        case "email":
+            window.location.href =
+                "mailto:info@example.com?subject=Tour Enquiry";
+            break;
+
+        case "form":
+            closeEnquiry();
+
+            document.querySelector(".uxx-form-container")
+            .scrollIntoView({
+                behavior: "smooth",
+                block: "center"
+            });
+            break;
+    }
+}
+
+
+
+</script>
+
+
+<style>
+
+  .popup{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.6);
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+
+.popup-content{
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    width:350px;
+    text-align:center;
+}
+
+.popup-content h2{
+    margin-bottom:20px;
+}
+
+.popup-content button{
+    width:100%;
+    padding:14px;
+    margin:10px 0;
+    border:none;
+    border-radius:8px;
+    background:#ff6600;
+    color:#fff;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.popup-content button:hover{
+    background:#e65c00;
+}
+
+.close{
+    float:right;
+    font-size:28px;
+    cursor:pointer;
+}
+</style>
+
+
+
+
+
+
+
+    
+
+
+<style>
+
+
+
+
+  .uxx-banner-main{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:60px;
+    min-height:80vh;
+    background: url('images/banner.jpg');
+    background-size:cover;
+    background-position:center;
+    color:#fff;
+}
+
+.uxx-banner-left{
+    max-width:50%;
+}
+
+.uxx-banner-left h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.uxx-banner-left p{
+    font-size:18px;
+    margin:10px 0 20px;
+}
+
+.uxx-banner-tag{
+    font-size:26px;
+    background:linear-gradient(90deg, #1c7c82, #c9a05c);
+    padding:10px 20px;
+    display:inline-block;
+    border-radius:8px;
+}
+
+.uxx-form-container{
+    width:380px;
+    background: linear-gradient(160deg, #0f2545, #123a4a);
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.5);
+    border:1px solid rgba(201,160,92,0.4);
+}
+
+.uxx-form-header{
+    background:linear-gradient(90deg, #c9a05c, #e0c084);
+    color:#e8590c;
+    padding:12px;
+    text-align:center;
+    font-size:20px;
+    font-weight:700;
+    margin-bottom:15px;
+    border-radius:6px;
+}
+
+.uxx-shake-thumb{
+    display:inline-block;
+    margin-right:8px;
+    animation:uxxShake 0.8s infinite;
+}
+
+@keyframes uxxShake{
+    0%{transform:rotate(0);}
+    25%{transform:rotate(-15deg);}
+    50%{transform:rotate(15deg);}
+    75%{transform:rotate(-10deg);}
+    100%{transform:rotate(0);}
+}
+.uxx-input-box{
+    position:relative;
+    margin-bottom:15px;
+}
+.uxx-input-box input,
+.uxx-input-box textarea{
+    width:100%;
+    padding:12px 40px 12px 12px;
+    border:none;
+    border-radius:6px;
+    font-size:14px;
+    font-family:'DM Sans', sans-serif;
+}
+
+.uxx-input-box i{
+    position:absolute;
+    right:12px;
+    top:50%;
+    transform:translateY(-50%);
+    color:#555;
+}
+
+.uxx-submit-btn{
+    width:100%;
+    padding:12px;
+    background:linear-gradient(90deg, #c9a05c, #e0c084);
+    border:none;
+    color:#0b1e3d;
+    font-size:16px;
+    font-weight:700;
+    border-radius:6px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.uxx-submit-btn:hover{
+    background:linear-gradient(90deg, #b78d47, #c9a05c);
+}
+
+@media(max-width:900px){
+    .uxx-banner-main{
+        flex-direction:column;
+        text-align:center;
+        padding:30px;
+    }
+
+    .uxx-banner-left{
+        max-width:100%;
+        margin-bottom:30px;
+    }
+
+    .uxx-form-container{
+        width:100%;
+    }
+
+    .uxx-banner-left h1{
+        font-size:32px;
+    }
+}
+</style>
+
+
+
+
+
+
+<div class="container" style="padding-top: 70px; padding-bottom: 20px;">
+  <div class="section-title">
+    <h2>Best Holiday Deals</h2>
+
+    <p>Embark on an unforgettable journey through Dubai, where pristine beaches, ancient temples, tropical forests, and vibrant island culture come together in perfect harmony.</p>
+
+  </div>
+  <div class="packages-grid" id="packagesGrid">
+    <div class="package-card">
+      <div class="offer-strip">🔥 Limited Offer – Book Today & Save More</div>
+      <div class="package-img">
+        <span class="discount">20% Off</span>
+      <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1600&q=80
+     alt="Bali Package"
+     onerror="this.src='https://images.unsplash.com/photo-1549366021-9f761d450615?w=600&auto=format'">
+      </div>
+      <div class="package-content">
+        <div class="rating-duration"><div class="stars">★★★★★</div><div><i class="fa fa-clock"></i> 04 Nights / 05 Days</div></div>
+        <div class="title">Dubai Tour Package:</div>
+        <div class="price">From <span>₹28,000</span> <span class="per-person">/ per person</span> <span class="old">₹34,500</span></div>
+        <div class="features"><div><i class="fa fa-hotel"></i>Hotel</div><div><i class="fa fa-plane"></i>Flights</div><div><i class="fa fa-binoculars"></i>Sightseeing</div><div><i class="fa fa-car"></i>Transport</div><div><i class="fa fa-utensils"></i>Meals</div></div>
+        <div class="inclusion-short"><p> ✔ Daily Breakfast at the Hotel</p><p>✔ 5 Nights of Comfortable Accommodation  <p></div>
+        <div class="inclusion-full">
+          <p>✔ Private Return Airport Transfers in a Comfortable Air-Conditioned Vehicle</p>
+          <p>✔ Traditional Arabic Welcome with Refreshments on Arrival</p>
+          <p>✔ Half-Day Dubai City Tour covering Burj Al Arab, Jumeirah Beach, Palm Jumeirah & Dubai Marina</p>
+          <p>✔ Visit to the World-Famous Burj Khalifa (124th & 125th Floor - As Per Package)</p>
+          <p>✔ Dubai Mall Visit with Dubai Fountain Show Experience</p>
+          <p>✔ Exciting Desert Safari with Dune Bashing, Camel Ride, Sandboarding & Sunset Photography</p>
+          <p>✔ BBQ Buffet Dinner with Live Belly Dance, Tanoura Show & Fire Show at Desert Camp</p>
+          <p>✔ Dubai Marina Dhow Cruise with International Buffet Dinner & Live Entertainment</p>
+          <p>✔ Full-Day Abu Dhabi City Tour including Sheikh Zayed Grand Mosque (Optional as per Package)</p>
+          <p>✔ Visit to the Museum of the Future (Outside View / Entry as Per Package)</p>
+          <p>✔ Explore the Gold Souk, Spice Souk & Traditional Dubai Creek Area</p>
+          <p>✔ Comfortable Private Vehicle for All Sightseeing Tours & Transfers</p>
+          <p>✔ All Toll Taxes, Parking Charges, Fuel Costs & Driver Allowances Included</p>
+          <p>✔ Experienced English-Speaking Driver cum Local Tour Guide</p>
+          <p>✔ Free Time for Shopping at Dubai Mall, Mall of the Emirates & Local Markets</p>
+          <p>✔ Personalized Travel Assistance Before & Throughout Your Holiday</p>
+          <p>✔ 24×7 Dedicated Customer Support for a Safe & Hassle-Free Journey</p>
+          <p>✔ UAE Tourist Visa Assistance (If Included in the Selected Package)</p>
+          <p>✔ Travel Insurance (If Included in the Selected Package)</p>
+          <p>✔ Personal Expenses such as Shopping, Laundry, Telephone Calls & Optional Activities are Not Included</p>
+          <p>✔ Any Services, Meals or Expenses Not Specifically Mentioned in the Package Inclusions</p>
+          <p>✔ A Perfect Blend of Luxury, Adventure, Desert Experiences & Modern Attractions for an Unforgettable Dubai Holiday</p>
+        </div>
+
+
+
+
+
+        <div class="read-more" onclick="toggleReadMore(this)">[+] Read More</div>
+        <div class="btn-row">
+          <a href="https://wa.me/+91 7611175557?text=Hi%2C%20I'm%20interested%20in%20Bali%20package.%20Please%20share%20more%20details." target="_blank" class="btn whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+          <a href="tel:+917611175557" class="btn call"><i class="fa fa-phone"></i> Call</a>
+          <button class="btn enquiry" onclick="openPopupWithPackage('Bali weekend Tour Packages')"><i class="fa fa-paper-plane"></i> Enquiry</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="package-card">
+      <div class="offer-strip"💎 Limited-Time Luxury Offer – Secure Your Escape & Save More></div>
+      <div class="package-img"><span class="discount">18% Off</span><img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1200&q=80"onerror="this.src='https://images.unsplash.com/photo-1600109640002-1549e73d7c6d?w=600&auto=format'"></div>
+      <div class="package-content">
+        <div class="rating-duration"><div class="stars">★★★★★</div><div><i class="fa fa-clock"></i> 05 Nights / 06 Days</div></div>
+        <div class="title">Dubai Premium Holiday Package</div>
+        <div class="price">From <span>27,500</span> <span class="per-person">/ per person</span> <span class="old">₹35,000</span></div>
+        <div class="features"><div><i class="fa fa-hotel"></i>Hotel</div><div><i class="fa fa-plane"></i>Flights</div><div><i class="fa fa-binoculars"></i>Sightseeing</div><div><i class="fa fa-car"></i>Transport</div><div><i class="fa fa-utensils"></i>Meals</div></div>
+        <div class="inclusion-short"><p>✔ 03 Morning Tea, 03 Breakfast And 03 Dinner</p><p>✔ Welcome Drink (Non Alcoholic)</p></div>
+        <div class="inclusion-full">
+
+
+
+
+
+          <p>✔ 05 Nights Luxury Stay at a Premium Hotel in Dubai</p>
+          <p>✔ Daily Buffet Breakfast at the Hotel</p>
+          <p>✔ Private Return Airport Transfers</p>
+          <p>✔ Half-Day Dubai City Tour (Burj Al Arab, Palm Jumeirah & Dubai Marina)</p>
+          <p>✔ Burj Khalifa At the Top Entry (124th & 125th Floor)</p>
+          <p>✔ Evening Desert Safari with Dune Bashing, Camel Ride & BBQ Dinner</p>
+          <p>✔ Dubai Marina Dhow Cruise with Buffet Dinner</p>
+          <p>✔ Professional English-Speaking Tour Guide & 24×7 Travel Assistance</p>
+          <p>✔ All Applicable Taxes, Return Flights & UAE Visa Assistance (As Per Package)</p>
+
+
+         
+
+        </div>
+        <div class="read-more" onclick="toggleReadMore(this)">[+] Read More</div>
+
+        <div class="btn-row">
+          <a href="https://wa.me/+91 611175557?text=Hi%2C%20I'm%20interested%20in%20Bali%20volvo%20package.%20Please%20share%20more%20details." target="_blank" class="btn whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+          <a href="tel:+91 7611175557" class="btn call"><i class="fa fa-phone"></i> Call</a>
+          <button class="btn enquiry" onclick="openPopupWithPackage('bali volvo packages')"><i class="fa fa-paper-plane"></i> Enquiry</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="package-card">
+      <div class="offer-strip">🔥 Limited Offer – Book Today & Save More</div>
+      <div class="package-img"><span class="discount">15% Off</span><img src="https://images.unsplash.com/photo-1518684079-3c830dcef090?w=1600&q=80" onerror="this.src='https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=600&auto=format'"></div>
+      <div class="package-content">
+        <div class="rating-duration"><div class="stars">★★★★★</div><div><i class="fa fa-clock"></i> 05 Nights / 06 Days</div></div>
+        <div class="title"> Dubai  Honeymoon Package</div>
+        <div class="price">From <span>₹27,000</span> <span class="per-person">/ per person</span> <span class="old">₹36,000</span></div>
+        <div class="features"><div><i class="fa fa-hotel"></i>Hotel</div><div><i class="fa fa-plane"></i>Flights</div><div><i class="fa fa-binoculars"></i>Sightseeing</div><div><i class="fa fa-car"></i>Transport</div><div><i class="fa fa-utensils"></i>Meals</div></div>
+        <div class="inclusion-short"><p>✔ Welcome Drink (Non Alcoholic)</p><p>✔ 03 Morning Tea, 03 Breakfast And 03 Dinner</p></div>
+        <div class="inclusion-full">
+
+
+
+
+
+          <p>✔ 05 Nights Luxury Accommodation in a Premium Dubai Hotel</p>
+          <p>✔ Daily Buffet Breakfast (05 Breakfasts) at the Hotel</p>
+          <p>✔ Return International Flight Tickets (As Per Package)</p>
+          <p>✔ Private Return Airport Transfers in a Comfortable Air-Conditioned Vehicle</p>
+          <p>✔ Half-Day Dubai City Tour covering Burj Al Arab, Palm Jumeirah, Jumeirah Beach & Dubai Marina</p>
+          <p>✔ Visit to Burj Khalifa – At the Top (124th & 125th Floor) with Dubai Mall</p>
+          <p>✔ Evening Desert Safari with Dune Bashing, Camel Ride, BBQ Dinner & Live Entertainment</p>
+          <p>✔ Dubai Marina Dhow Cruise with International Buffet Dinner</p>
+          <p>✔ Professional English-Speaking Driver cum Tour Guide with 24×7 Travel Assistance</p>
+          <p>✔ All Entrance Tickets, Parking Charges, Fuel Costs & Government Taxes Included</p>
+          <p>✔ Carefully Designed Itinerary for a Luxurious, Memorable & Hassle-Free Dubai Vacation</p>
+
+         
+          
+        </div>
+        <div class="read-more" onclick="toggleReadMore(this)">[+] Read More</div>
+        <div class="btn-row">
+          <a href="https://wa.me/+917611175557?text=Hi%2C%20I'm%20interested%20in%20Bali%20Honeymoon%20Volvo%20Tour%20package.%20Please%20share%20more%20details." target="_blank" class="btn whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+          <a href="tel:+7611175557" class="btn call"><i class="fa fa-phone"></i> Call</a>
+          <button class="btn enquiry" onclick="openPopupWithPackage('Bali Honeymoon Volvo Packages')"><i class="fa fa-paper-plane"></i> Enquiry</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="package-card">
+      <div class="offer-strip">🔥 Limited Offer – Book Today & Save More</div>
+      <div class="package-img"><span class="discount">22% Off</span><img src="https://images.unsplash.com/photo-1526495124232-a04e1849168c?w=1600&q=80" onerror="this.src='https://images.unsplash.com/photo-1593697821252-0c9137d9fc45?w=600&auto=format'"></div>
+      <div class="package-content">
+        <div class="rating-duration"><div class="stars">★★★★★</div><div><i class="fa fa-clock"></i> 03 Nights / 04 Days</div></div>
+        <div class="title">Honeymoon Special Dubai Tour Package</div>
+        <div class="price">From <span>₹5,499</span> <span class="per-person">/ per person</span> <span class="old">₹10,500</span></div>
+        <div class="features"><div><i class="fa fa-hotel"></i>Hotel</div><div><i class="fa fa-plane"></i>Flights</div><div><i class="fa fa-binoculars"></i>Sightseeing</div><div><i class="fa fa-car"></i>Transport</div><div><i class="fa fa-utensils"></i>Meals</div></div>
+        <div class="inclusion-short"><p>✔  2 Nights Accommodation in Bali</p><p>✔  Welcome drink on arrival</p></div>
+        <div class="inclusion-full">
+
+
+
+
+          <p>✔ Comprehensive Sightseeing Tours as per the Curated Dubai Itinerary</p>
+
+          <p>✔ Half-Day Dubai City Tour covering Burj Al Arab, Palm Jumeirah, Jumeirah Beach & Dubai Marina</p>
+          <p>✔ Visit to Burj Khalifa – At the Top (124th & 125th Floor) with Dubai Mall & Dubai Fountain Show</p>
+          <p>✔ Exciting Evening Desert Safari with Dune Bashing, Camel Ride, Sandboarding & BBQ Dinner</p>
+          <p>✔ Dubai Marina Dhow Cruise with International Buffet Dinner & Live Entertainment</p>
+          <p>✔ Full-Day Abu Dhabi City Tour including Sheikh Zayed Grand Mosque (As Per Package)</p>
+          <p>✔ Comfortable Private Air-Conditioned Vehicle for All Sightseeing Tours & Transfers</p>
+          <p>✔ Professional English-Speaking Driver with Extensive Local Knowledge</p>
+          <p>✔ Personalized Door-to-Door Pick-up & Drop-off Service Throughout the Tour</p>
+          <p>✔ All Entrance Fees, Parking Charges, Fuel Costs, Driver Allowances & Applicable Toll Charges Included</p>
+          <p>✔ Flexible & Hassle-Free Travel Experience with Personalized Assistance</p>
+          <p>✔ Dedicated 24×7 On-Tour Customer Support for a Smooth & Memorable Holiday</p>
+          <p>✔ All Applicable Government Taxes & Service Charges Included</p>
+          <p>✔ Create Lifelong Memories with an Unforgettable Dubai Experience</p>
+
+
+         
+        </div>
+        <div class="read-more" onclick="toggleReadMore(this)">[+] Read More</div>
+        <div class="btn-row">
+          <a href="https://wa.me/ +91 7611175557?text=Hi%2C%20I'm%20interested%20in%20Bli%20volvo%20Tour%20package.%20Please%20share%20more%20details." target="_blank" class="btn whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+          <a href="tel: +91 7611175557" class="btn call"><i class="fa fa-phone"></i> Call</a>
+          <button class="btn enquiry" onclick="openPopupWithPackage('Bali Volvo Package')"><i class="fa fa-paper-plane"></i> Enquiry</button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="package-card">
+      <div class="offer-strip">🔥 Limited Offer – Book Today & Save More</div>
+      <div class="package-img"><span class="discount">25% Off</span><img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=1600&q=80" onerror="this.src='https://images.unsplash.com/photo-1625919929754-6b1e8a6c17d0?w=600&auto=format'"></div>
+      <div class="package-content">
+        <div class="rating-duration"><div class="stars">★★★★★</div><div><i class="fa fa-clock"></i> 06 Nights / 07 Days</div></div>
+        <div class="title">Dubai  Adventure & Leisure Package</div>
+        <div class="price">From <span>₹28,000</span> <span class="per-person">/ per person</span> <span class="old">₹35,000</span></div>
+        <div class="features"><div><i class="fa fa-hotel"></i>Hotel</div><div><i class="fa fa-plane"></i>Flights</div><div><i class="fa fa-binoculars"></i>Sightseeing</div><div><i class="fa fa-car"></i>Transport</div><div><i class="fa fa-utensils"></i>Meals</div></div>
+        <div class="inclusion-short"><p>✔ Bali  Volvo Bus 02 Tickets</p><p>✔  Bali Deluxe Bus(Non AC) 02 Tickets</p></div>
+        <div class="inclusion-full">
+
+          <p>✔ Traditional Balinese Flower Garland Welcome & Refreshing Welcome Drink on Arrival</p>
+          <p>✔ 04 Nights Luxury Accommodation in Premium Bali Hotel/Resort</p>
+          <p>✔ Daily Buffet Breakfast Served at the Hotel</p>
+          <p>✔ Private Return Airport Transfers with Comfortable Air-Conditioned Vehicle</p>
+          <p>✔ Exciting Water Sports Adventure at Tanjung Benoa (Banana Boat & More)</p>
+          <p>✔ Full-Day Ubud, Kintamani Volcano & Tegalalang Rice Terrace Sightseeing Tour</p>
+          <p>✔ Visit the Iconic Lempuyang Temple (Gateway to Heaven) & Tirta Gangga Water Palace</p>
+          <p>✔ Enjoy the Famous Bali Swing Experience with Stunning Jungle Views</p>
+          <p>✔ Full-Day West Nusa Penida Island Tour with Indonesian Lunch Included</p>
+          <p>✔ Explore Beautiful Beaches, Cliffs & Crystal Clear Waters of Nusa Penida</p>
+          <p>✔ Private Air-Conditioned Vehicle for All Sightseeing & Transfers</p>
+          <p>✔ Experienced English-Speaking Local Driver cum Tour Guide</p>
+          <p>✔ All Entrance Tickets & Attraction Fees Included as per Itinerary</p>
+          <p>✔ All Toll Charges, Parking Fees, Fuel Costs & Driver Allowances Included</p>
+          <p>✔ 24×7 Dedicated Travel Assistance Throughout Your Bali Holiday</p>
+          <p>✔ All Applicable Government Taxes & Service Charges Included</p>
+          <p>✔ Create Unforgettable Memories in the Tropical Paradise of Bali</p>
+     
+        </div>
+        <div class="read-more" onclick="toggleReadMore(this)">[+] Read More</div>
+        <div class="btn-row">
+          <a href="https://wa.me/+91 7611175557?text=Hi%2C%20I'm%20interested%20in%Balii%20Bali%20volvo%20package.%20Please%20share%20more%20details." target="_blank" class="btn whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+          <a href="tel:+ +91 7611175557" class="btn call"><i class="fa fa-phone"></i> Call</a>
+          <button class="btn enquiry" onclick="openPopupWithPackage('Bali Volvo Package')"><i class="fa fa-paper-plane"></i> Enquiry</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="package-card">
+      <div class="offer-strip">🔥 Limited Offer – Book Today & Save More</div>
+      <div class="package-img"><span class="discount">15% Off</span><img src="https://images.unsplash.com/photo-1546412414-8035e1776c9a?w=1600&q=80" onerror="this.src='https://images.unsplash.com/photo-1593697821252-0c9137d9fc45?w=600&auto=format'"></div>
+      <div class="package-content">
+        <div class="rating-duration"><div class="stars">★★★★★</div><div><i class="fa fa-clock"></i> 05 Nights / 06 Days</div></div>
+        <div class="title">Dubai  Flight  Package</div>
+        <div class="price">From <span>28,000</span> <span class="per-person">/ per person</span> <span class="old">₹35,000</span></div>
+        <div class="features"><div><i class="fa fa-hotel"></i>Hotel</div><div><i class="fa fa-plane"></i>Flights</div><div><i class="fa fa-binoculars"></i>Sightseeing</div><div><i class="fa fa-car"></i>Transport</div><div><i class="fa fa-utensils"></i>Meals</div></div>
+        <div class="inclusion-short"><p>✔ 2 Nights Accommodation in Bali</p><p>✔ 3 Nights Accommodation in Bali</p></div>
+        <div class="inclusion-full">
+
+          <p>✔ 05 Buffet Breakfasts at the Hotel</p>
+          <p>✔ One Romantic Candlelight Dinner in Bali (Complimentary)</p>
+          <p>✔ Private Airport Transfers & All Sightseeing by Air-Conditioned Vehicle</p>
+          <p>✔ All Parking Fees, Fuel Charges, Driver Allowances & Government Taxes Included</p>
+          <p>✔ Explore the Beauty of Bali with Comfortable Private Tours and Unforgettable Island Experiences</p>
+
+        </div>
+        <div class="read-more" onclick="toggleReadMore(this)">[+] Read More</div>
+        <div class="btn-row">
+          <a href="https://wa.me/917611175557text=Hi%2C%20I'm%20interested%20in%20Bali%20Bali%20Car%20package.%20Please%20share%20more%20details." target="_blank" class="btn whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+          <a href="tel:+917611175557" class="btn call"><i class="fa fa-phone"></i> Call</a>
+          <button class="btn enquiry" onclick="openPopupWithPackage('Bali Car Package')"><i class="fa fa-paper-plane"></i> Enquiry</button>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+
+<div id="more1" style="display:none;">
+    <p>✔ Airport Transfer</p>
+    <p>✔ Hotel Stay</p>
+    <p>✔ Desert Safari</p>
+</div>
+
+<a href="#" onclick="toggleDetails('more1', this); return false;">
+    [+] Read More
+</a>
+
+
+
+<style>
+
+
+
+
+/*==========================
+   Professional Section Title
+==========================*/
+
+.section-title{
+    text-align:center;
+    padding:20px;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    font-size:42px;
+    font-weight:700;
+    color:#0B1F3A;
+    margin-bottom:18px;
+    position:relative;
+}
+
+.section-title h2::after{
+    content:"";
+    width:90px;
+    height:4px;
+    background:#ff6b00;
+    display:block;
+    margin:15px auto 0;
+    border-radius:10px;
+}
+
+.section-title p{
+    max-width:850px;
+    margin:0 auto;
+    font-size:17px;
+    line-height:1.8;
+    color:#666666;
+}
+
+@media(max-width:768px){
+
+.section-title h2{
+    font-size:30px;
+}
+
+.section-title p{
+    font-size:15px;
+}
+
+}
+
+
+
+
+
+   
+
+
+
+
+
+
+
+</style>
+
+
+
+<script>
+
+
+function toggleReadMore(button) {
+
+    // Find the current package card
+    const packageCard = button.closest(".package-card");
+
+    // Find the hidden content inside this card
+    const moreContent = packageCard.querySelector(".inclusion-full");
+
+    if (moreContent.style.display === "block") {
+
+        moreContent.style.display = "none";
+        button.innerHTML = "[+] Read More";
+
+    } else {
+
+        moreContent.style.display = "block";
+        button.innerHTML = "[-] Read Less";
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+<style>
+
+    .package-card{
+    position:relative;
+    overflow:hidden;
+    background:#fff;
+    border-radius:20px;
+    transition:.45s ease;
+    box-shadow:0 10px 35px rgba(0,0,0,.08);
+}
+
+.package-card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 25px 60px rgba(0,0,0,.18);
+}
+
+
+
+
+.package-img{
+    overflow:hidden;
+}
+
+.package-img img{
+    width:100%;
+    transition:0.7s;
+}
+
+.package-card:hover img{
+    transform:scale(1.12);
+}
+
+
+.discount{
+    animation:floatBadge 2.5s ease-in-out infinite;
+}
+
+@keyframes floatBadge{
+
+0%,100%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-8px);
+}
+
+}
+
+
+.offer-strip{
+    position:relative;
+    overflow:hidden;
+}
+
+.offer-strip::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+
+left:-120%;
+
+width:50%;
+
+height:100%;
+
+background:linear-gradient(
+90deg,
+transparent,
+rgba(255,255,255,.8),
+transparent);
+
+transform:skewX(-25deg);
+
+animation:shine 3s infinite;
+
+}
+
+@keyframes shine{
+
+100%{
+left:150%;
+}
+
+}
+
+
+
+.btn{
+
+transition:.35s;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.btn:hover{
+
+transform:translateY(-3px);
+
+box-shadow:0 12px 30px rgba(0,0,0,.2);
+
+}
+
+
+
+.package-card{
+
+opacity:0;
+
+transform:translateY(60px);
+
+animation:cardShow .8s forwards;
+
+}
+
+.package-card:nth-child(1){animation-delay:.2s;}
+.package-card:nth-child(2){animation-delay:.4s;}
+.package-card:nth-child(3){animation-delay:.6s;}
+.package-card:nth-child(4){animation-delay:.8s;}
+.package-card:nth-child(5){animation-delay:1s;}
+.package-card:nth-child(6){animation-delay:1.2s;}
+
+@keyframes cardShow{
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+
+.whatsapp{
+
+animation:pulse 2s infinite;
+
+}
+
+@keyframes pulse{
+
+0%{
+
+box-shadow:0 0 0 0 rgba(37,211,102,.7);
+
+}
+
+70%{
+
+box-shadow:0 0 0 18px transparent;
+
+}
+
+100%{
+
+box-shadow:0 0 0 0 transparent;
+
+}
+
+}
+
+
+.package-card::before{
+
+content:"";
+
+position:absolute;
+
+left:0;
+
+top:0;
+
+width:5px;
+
+height:0;
+
+background:#ff9800;
+
+transition:.5s;
+
+}
+
+.package-card:hover::before{
+
+height:100%;
+
+}
+
+
+
+.features i{
+
+animation:iconFloat 2s infinite ease-in-out;
+
+}
+
+@keyframes iconFloat{
+
+50%{
+
+transform:translateY(-5px);
+
+}
+
+}
+
+
+
+html{
+
+scroll-behavior:smooth;
+
+}
+
+.section-title{
+
+animation:fadeUp 1s;
+
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+
+
+
+
+</style>
+
+
+
+
+
+<!-- ================= WHY CHOOSE US ================= -->
+
+<section class="why-choose-section">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Why Choose Us</h2>
+            <p>Travel With Confidence — Thousands of happy travelers trust us every year for their dream vacation.</p>
+        </div>
+
+        <div class="why-grid">
+
+            <!-- Card 1 -->
+            <div class="why-card">
+                <div class="why-icon">
+                    <i class="fas fa-award"></i>
+                </div>
+                <h3>10+ Years of Excellence</h3>
+                <p>With over a decade of expertise, we create extraordinary Bali holidays tailored to your travel dreams with exceptional local knowledge.</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="why-card">
+                <div class="why-icon">
+                    <i class="fas fa-tag"></i>
+                </div>
+                <h3>Best Price Promise</h3>
+                <p>Enjoy premium Bali experiences at unbeatable prices with complete transparency and absolutely no hidden charges.</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="why-card">
+                <div class="why-icon">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <h3>24/7 Travel Assistance</h3>
+                <p>Our dedicated travel experts are available around the clock via WhatsApp to ensure a smooth and worry-free journey.</p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="why-card">
+                <div class="why-icon">
+                    <i class="fas fa-car"></i>
+                </div>
+                <h3>Private Luxury Transfers</h3>
+                <p>Travel in comfort with private air-conditioned vehicles, professional chauffeurs, and punctual service throughout your Bali adventure.</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+
+
+
+
+
+/*==========================================
+        WHY CHOOSE US SECTION
+==========================================*/
+
+.why-choose-section{
+    background: linear-gradient(135deg,#FFB347,#FF8C42);
+    padding:80px 0;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/*=========================
+      Section Title
+==========================*/
+
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-title h2{
+    font-size:42px;
+    font-weight:700;
+    color:#0F172A;
+    margin-bottom:15px;
+    letter-spacing:1px;
+}
+
+.section-title p{
+    font-size:19px;
+    color:#111827;
+    font-weight:600;
+    max-width:750px;
+    margin:0 auto;
+    line-height:1.8;
+}
+
+/*=========================
+        Grid
+==========================*/
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+/*=========================
+        Cards
+==========================*/
+
+.why-card{
+    background:#ffffff;
+    border-radius:20px;
+    padding:35px 30px;
+    text-align:center;
+    box-shadow:0 12px 30px rgba(0,0,0,0.12);
+    transition:all .4s ease;
+}
+
+.why-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,0.18);
+}
+
+/*=========================
+         Icon
+==========================*/
+
+.why-icon{
+    width:80px;
+    height:80px;
+    margin:0 auto 25px;
+    border-radius:50%;
+    background:#ff7a00;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transition:.4s;
+}
+
+.why-icon i{
+    color:#ffffff;
+    font-size:34px;
+}
+
+.why-card:hover .why-icon{
+    background:#0F172A;
+}
+
+/*=========================
+      Card Heading
+==========================*/
+
+.why-card h3{
+    font-size:24px;
+    color:#1F2937;
+    margin-bottom:15px;
+    font-weight:700;
+}
+
+/*=========================
+      Card Paragraph
+==========================*/
+
+.why-card p{
+    font-size:16px;
+    color:#4B5563;
+    line-height:1.8;
+}
+
+/*=========================
+      Responsive
+==========================*/
+
+@media (max-width:768px){
+
+    .why-choose-section{
+        padding:60px 20px;
+    }
+
+    .section-title h2{
+        font-size:34px;
+    }
+
+    .section-title p{
+        font-size:17px;
+    }
+
+    .why-card{
+        padding:30px 25px;
+    }
+
+    .why-card h3{
+        font-size:22px;
+    }
+
+    .why-card p{
+        font-size:15px;
+    }
+
+    .why-icon{
+        width:70px;
+        height:70px;
+    }
+
+    .why-icon i{
+        font-size:30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+</style>
+
+
+
+
+
+
+
+
+
+<!-- ================= TESTIMONIALS ================= -->
+
+<section class="testimonials-section">
+
+    <div class="container">
+
+        <div class="section-title">
+            <span>★★★★★ Trusted By Thousands</span>
+            <h2>What Our Happy Travelers Say</h2>
+            <p>Real experiences from guests who explored Bali with us.</p>
+        </div>
+
+        <div class="testimonial-grid">
+
+            <!-- Card 1 -->
+            <div class="testimonial-card">
+                <div class="quote"><i class="fas fa-quote-left"></i></div>
+
+                <p class="testimonial-text">
+                    Amazing Bali tour experience! Beautiful destinations,
+                    luxury hotels, and outstanding service throughout the journey.
+                    Everything was perfectly organized.
+                </p>
+
+                <div class="rating-small">
+                    ★★★★★
+                </div>
+
+                <div class="client-info">
+
+                    <img src="https://randomuser.me/api/portraits/women/65.jpg">
+
+                    <div>
+                        <h4>Preeti Sharma</h4>
+                        <span>Delhi, India</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="testimonial-card">
+
+                <div class="quote">
+                    <i class="fas fa-quote-left"></i>
+                </div>
+
+                <p class="testimonial-text">
+                    The itinerary was perfectly planned.
+                    Every destination was breathtaking.
+                    Highly recommend this Bali package.
+                </p>
+
+                <div class="rating-small">
+                    ★★★★★
+                </div>
+
+                <div class="client-info">
+
+                    <img src="https://randomuser.me/api/portraits/men/36.jpg">
+
+                    <div>
+                        <h4>Sunny Verma</h4>
+                        <span>Mumbai, India</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Card 3 -->
+            <div class="testimonial-card">
+
+                <div class="quote">
+                    <i class="fas fa-quote-left"></i>
+                </div>
+
+                <p class="testimonial-text">
+                    Excellent hotels, private transfers,
+                    wonderful sightseeing and amazing support.
+                    One of our best holidays ever.
+                </p>
+
+                <div class="rating-small">
+                    ★★★★★
+                </div>
+
+                <div class="client-info">
+
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg">
+
+                    <div>
+                        <h4>Priya Nair</h4>
+                        <span>Bangalore, India</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+
+
+
+ .why-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+
+@media(max-width:992px){
+    .why-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:768px){
+    .why-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+
+
+/*==========================
+TESTIMONIAL SECTION
+==========================*/
+
+.testimonials-section{
+
+padding:90px 0;
+
+background:linear-gradient(135deg,#eef8ff,#ffffff);
+
+overflow:hidden;
+
+position:relative;
+
+}
+
+.testimonials-section::before{
+
+content:"";
+
+position:absolute;
+
+width:350px;
+
+height:350px;
+
+background:#00bcd420;
+
+border-radius:50%;
+
+top:-120px;
+
+left:-120px;
+
+filter:blur(70px);
+
+animation:floatBg 8s infinite ease-in-out;
+
+}
+
+.testimonials-section::after{
+
+content:"";
+
+position:absolute;
+
+width:300px;
+
+height:300px;
+
+background:#ff980020;
+
+border-radius:50%;
+
+bottom:-100px;
+
+right:-100px;
+
+filter:blur(70px);
+
+animation:floatBg 10s infinite ease-in-out;
+
+}
+
+@keyframes floatBg{
+
+50%{
+
+transform:translateY(30px);
+
+}
+
+}
+
+.section-title{
+
+text-align:center;
+
+margin-bottom:60px;
+
+animation:fadeDown 1s;
+
+}
+
+.section-title span{
+
+color:#ff9800;
+
+font-weight:700;
+
+letter-spacing:2px;
+
+}
+
+.section-title h2{
+
+font-size:42px;
+
+margin:15px 0;
+
+}
+
+.section-title p{
+
+color:#666;
+
+max-width:700px;
+
+margin:auto;
+
+}
+
+.testimonial-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+gap:35px;
+
+}
+
+.testimonial-card{
+
+background:rgba(255,255,255,.8);
+
+backdrop-filter:blur(15px);
+
+border-radius:25px;
+
+padding:35px;
+
+position:relative;
+
+transition:.5s;
+
+box-shadow:0 15px 45px rgba(0,0,0,.08);
+
+animation:fadeUp 1s forwards;
+
+}
+
+.testimonial-card:hover{
+
+transform:translateY(-15px);
+
+box-shadow:0 30px 60px rgba(0,0,0,.18);
+
+}
+
+.quote{
+
+font-size:45px;
+
+color:#ff9800;
+
+margin-bottom:20px;
+
+animation:quoteFloat 2s infinite;
+
+}
+
+@keyframes quoteFloat{
+
+50%{
+
+transform:translateY(-8px);
+
+}
+
+}
+
+.testimonial-text{
+
+font-size:16px;
+
+line-height:1.8;
+
+color:#555;
+
+margin-bottom:25px;
+
+}
+
+.rating-small{
+
+color:#ffc107;
+
+font-size:20px;
+
+margin-bottom:25px;
+
+animation:starGlow 2s infinite;
+
+}
+
+@keyframes starGlow{
+
+50%{
+
+transform:scale(1.08);
+
+text-shadow:0 0 10px gold;
+
+}
+
+}
+
+.client-info{
+
+display:flex;
+
+align-items:center;
+
+gap:15px;
+
+}
+
+.client-info img{
+
+width:70px;
+
+height:70px;
+
+border-radius:50%;
+
+object-fit:cover;
+
+border:4px solid #fff;
+
+transition:.4s;
+
+}
+
+.testimonial-card:hover img{
+
+transform:scale(1.12) rotate(5deg);
+
+}
+
+.client-info h4{
+
+margin:0;
+
+font-size:19px;
+
+}
+
+.client-info span{
+
+color:#777;
+
+font-size:14px;
+
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(50px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+@keyframes fadeDown{
+
+from{
+
+opacity:0;
+
+transform:translateY(-40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+   
+</style>
+
+
+
+
+
+<footer class="main-footer" id="contact">
+  <div class="footer-container">
+    <div class="footer-brand">
+
+
+
+
+
+      <div class="footer-logo-box">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="Logo">
+</div>
+
+
+
+
+
+
+
+ 
+
+
+      <h3>Explore Dubai</h3>
+
+      <p>Discover the beauty of Dubai with pristine beaches, lush rice terraces, ancient temples, and luxurious stays.</p>
+    </div>
+    <div class="footer-links">
+      
+         <div class="footer-col"><h4>Get in Touch</h4><ul><li><i class="fa fa-phone-alt"></i> +91 7611175557</li><li><i class="fa fa-envelope"></i> info@trimanntravels.com</li><li><i class="fa fa-map-marker-alt"></i> 15A, Mayur Vihar, Delhi</li></ul></div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Trimann Travels. All rights reserved.</p>
+   
+  </div>
+
+
+</footer>
+
+
+
+
+
+<style>
+.footer-logo-box{ display:inline-block; padding:8px 14px; border-radius:8px; margin-bottom:10px; background:rgba(255,255,255,0.04);}
+.footer-logo-box img{ height:65px; display:block;}
+.footer-logo-box:hover{ box-shadow:0 0 10px rgba(201,160,92,0.5); transition:0.3s;}
+</style>
+
+
+ 
+
+
+
+
+</head>
+<body>
